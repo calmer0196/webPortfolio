@@ -1,0 +1,103 @@
+/* icon 햄버거 */
+.icon{
+	color: #fff;
+	font-size: 20px;
+	cursor: pointer;
+	display: none;
+}
+.icon.cancel-btn{
+	position: absolute;
+	right: 30px;
+	top: 20px;
+	margin-top: 0;
+}
+
+/* navbar */
+.navbar{
+	position: fixed;
+	z-index: 5;
+	width: 100%;
+	padding: 25px 0;
+	transition: all 0.4s ease;
+}
+.navbar.sticky{
+	padding: 10px 0;
+	background: #1b1b1b;
+}
+.navbar .inner{
+	max-width: 1500px;
+	margin: 0 auto;
+	padding: 0 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	transition: padding 0.5s;
+}
+.navbar .logo a{
+	color: #fff;
+	font-size: 30px;
+	font-weight: 600;
+	text-decoration: none;
+}
+.navbar .menu-list{
+	display: flex;
+}
+.navbar .menu-list li a{
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	padding: 0 20px;
+	text-decoration: none;
+	transition: color 0.5s;
+}
+.navbar .menu-list li a:hover{
+	color: gold;
+}
+
+/* PC (해상도 1024px)*/ 
+@media all and (max-width:1024px) {
+	.navbar .cont{
+		padding: 0 50px;
+	}
+} 
+
+
+/* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/ 
+@media all and (max-width:768px) {
+	body.disbaledScroll{
+		overflow: hidden;
+	}
+	.icon{
+		display: block;
+	}
+	.icon.hide{
+		display: none;
+	}
+	
+
+	.navbar .inner{
+		padding: 0 30px;
+	} 
+	.navbar .menu-list{
+		position: fixed;
+		top: 0;
+		left: -100%;
+		height: 100vh;
+		width: 100%;
+		max-width: 400px;
+		background: #222;
+		display: block;
+		padding: 40px 0;
+		text-align: center;
+		transition: all 0.4s ease;
+	} .navbar .menu-list.active{
+		left: 0%;
+		opacity: 0.7;
+	} .navbar .menu-list li:first-child{
+		margin-top: 0;	
+	} .navbar .menu-list li{
+		margin-top: 45px;	
+	} .navbar .menu-list li a{
+		font-size: 23px;
+	}
+}

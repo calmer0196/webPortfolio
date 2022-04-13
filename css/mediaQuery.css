@@ -1,0 +1,152 @@
+@media screen and (max-width:1280px) {
+    #about .inner{
+        padding-top: 250px;
+    }
+    #about .chart.circle .graph{
+        width: 110px;
+        height: 110px;
+    } #about .chart.circle .graph .center {
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+    }
+
+    .porfol .explanation{
+        width: 500px;
+        margin-bottom: 50px;
+    } .porfol .explanation .button{
+        margin-top: 30px;
+    }
+	.porfol .cont-box{
+        display: block;
+        width: 500px;
+    }
+}
+
+
+@media screen and (max-width:768px){
+    #home .tit {
+        left: 100px;
+    } #home .tit h2{
+        font-size: 45px;
+    } #home .tit p{
+        font-size: 18px;
+    }
+    
+    #home .producer {
+        right: 100px;
+        font-size: 25px;
+    }
+
+    #about{
+        display: flex;
+        align-items: center;
+    } 
+    #about .inner{
+        padding: 0;
+    } 
+}
+
+@media screen and (max-width:480px) {
+    /* 모바일 시 스킬 삭제 */
+    .effect-tit span{
+        opacity: 1;
+        transition: none;
+    } .effect-tit .tf_l{
+        transform: none;
+    } .effect-tit .tf_r{
+        transform: none;
+    }
+
+    #home .tit{
+        transition: left 1s, top 1s;
+    }
+    #home .producer{
+        transition: right 1s, bottom 1s, font-size 1s;
+    }
+
+    #about .chart{
+        opacity: 1;
+        transition: none;
+    }
+    #porfol.active .item >li{
+        opacity: 1;
+        transform: none;
+    } #porfol.active .item >li:first-child{
+        transition: left 1s, right 1s;
+    } #porfol.active .item >li:nth-child(2){
+        transition: left 1s, right 1s;
+    } #porfol.active .item >li:nth-child(3){
+        transition: left 1s, right 1s;
+    }
+
+
+
+    #home .tit {
+        left: 50px;
+        top: 200px
+    } #home .tit h2{
+        font-size: 40px;
+    } #home .tit p{
+        font-size: 16px;
+    }
+    
+    #home .producer {
+        right: 30px;
+        font-size: 22px;
+    }
+
+
+    #about .chart.rod .graph {
+        width: 230px;
+    }
+    
+    #porfol .inner{
+        padding: 200px 30px 0;
+    } #porfol .item li{
+        padding: 0 15px;
+
+    } #porfol .item li .web-view {
+        width: 300px;
+        height: 200px;
+        box-shadow: none;
+        border: 1px solid #ccc;
+    } #porfol .item li .web-view_overlay div{
+        font-size: 35px;
+    }
+
+    #porfol .btn-group .btn {
+        font-size: 40px;
+        width: 30px;
+        height: 60px;
+    } #porfol .btn-group .btn:first-child {
+        left: 10px;
+        top: 400px;
+    } #porfol .btn-group .btn:last-child {
+        right: -10px;
+        top: 400px;
+    }
+
+}
+
+
+@media screen and (max-height:768px){
+    #home .tit{
+        top: 200px;
+    } #home .producer{
+        bottom: 100px;
+    }
+
+    #about .inner{
+        padding-top: 150px;
+    }
+
+    #porfol .inner{
+        padding-top: 120px;
+    } 
+    #porfol .btn-group .btn:first-child {
+        top: 320px;
+    } #porfol .btn-group .btn:last-child {
+        top: 320px;
+    }
+}

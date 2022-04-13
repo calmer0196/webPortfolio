@@ -1,0 +1,440 @@
+html{
+    font-family: 'Noto Sans KR', sans-serif;
+    scroll-behavior: smooth;
+}
+.navbar .inner {
+    justify-content: right;
+}
+.navbar .menu-list li a:hover{
+	color: skyblue;
+}
+
+
+img{
+    width: 100%;
+    height: 100%;
+}
+section{
+    height: 100vh;
+} section .inner{
+    margin: 0 auto;
+}
+
+.effect-tit{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+} .effect-tit span{
+    opacity: 0;
+    transition: transform 1s, opacity 1s;
+} .effect-tit .tf_l{
+    transform: translateX(-20px);
+} .effect-tit .tf_r{
+    transform: translateX(20px);
+}
+
+
+#home{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("../img/home_bg.jpg") center/cover no-repeat;
+}
+#home .tit{
+    position: absolute;
+    top: 250px;     left: 200px;
+    opacity: 0;
+    transition: left 1s, top 1s, opacity 1s 0.5s;
+} 
+#home .tit h2{
+    font-size: 50px;
+    color: #222;
+    transition: font-size 1s;
+} #home .tit p{
+    font-size: 20px;
+    margin-top: 5px;
+    color: #555;
+    transition: font-size 1s;
+}
+#home .producer{
+    position: absolute;
+    right: 200px;   bottom: 150px;
+    font-size: 30px;
+    color: #333;
+    opacity: 0;
+    transition: right 1s, bottom 1s, font-size 1s, opacity 1s 1.5s;
+} 
+
+
+
+#about{
+    background: url("../img/about_bg.jpg") center/cover no-repeat;
+} #about .inner{
+    padding: 200px 100px 0;
+    transition: padding 1s;
+}
+#about .chart{
+    opacity: 0;
+    transition: opacity 1s 1s;
+} #about .chart.circle{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+} #about .chart.circle li{
+    text-align: center;
+} #about .chart.circle .graph{
+    position: relative;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    text-align: center;
+    transition: width 1s, height 1s;
+} #about .chart.circle .graph .center {
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    line-height: 80px;
+    font-size: 15px;
+    transform: translate(-50%, -50%);
+    transition: width 1s, height 1s, line-height 1s;
+} #about .chart.circle .txt{
+    margin-top: 5px;
+    font-weight: bold;
+}
+#about .chart.rod {
+    margin: 80px 0;
+} #about .chart.rod li{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+} #about .chart.rod .graph{
+    width: 380px;
+    transition: width 1s;
+} #about .chart.rod .graph .center{
+    margin-left: 10px;
+    color: #fff;
+}
+
+
+
+
+
+#porfol .inner{
+    position: relative;
+    padding: 180px 100px 0; 
+    transition: padding 1s;
+}
+#porfol .item{
+    display: flex;
+    overflow: hidden; 
+    margin-top: 60px;
+} #porfol .item li{
+    position: relative;
+    left: 0;
+    padding: 0 30px;
+    opacity: 0;
+    transform: translateY(200px);
+    transition: left 1s, right 1s;
+} #porfol .item li:first-child{
+    padding-left: 0;
+} #porfol .item li:last-child{
+    padding-right: 0;
+} 
+#porfol .item li .web-view{
+    position: relative;
+    display: flex;
+    width: 500px;
+    height: 300px;
+    box-shadow: 10px 5px 5px #ccc;
+    transition: width 0.8s, height 0.8s;
+}
+#porfol .item li:first-child .web-view{
+    background: no-repeat center/cover url("../img/hongcha_view.png");
+} #porfol .item li:nth-child(2) .web-view{
+    background: no-repeat center/cover url("../img/cgv_view.png");
+} #porfol .item li:nth-child(3) .web-view{
+    background: no-repeat center/cover url("../img/newbalance_view.png");
+} #porfol .item li:nth-child(4) .web-view{
+    background: no-repeat center/cover url("../img/kakao_view.png");
+}
+
+#porfol .item li .web-view_overlay{
+    width: 100%;    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+} #porfol .item li .web-view_overlay div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    font-weight: bold;
+    transform: translateY(20px);
+    transition: transform 0.5s;
+} #porfol .item li:nth-child(2) .web-view_overlay div{
+    background: url("../img/cgv_logo.png") center/cover no-repeat;
+    width: 142px;
+    height: 58px;
+} #porfol .item li:nth-child(3) .web-view_overlay div{
+    background: url("../img/newbal_logo.png") center/cover no-repeat;
+    width: 142px;
+    height: 58px;
+} 
+#porfol .item li .web-view_desc{
+    margin-top: 30px;
+    line-height: 1.8;
+}
+#porfol .item li .web-view_overlay:hover{
+    opacity: 1;
+} #porfol .item li .web-view_overlay:hover div{
+    transform: translateY(0);
+} 
+#porfol .btn-group .btn.carousel{
+    font-size: 60px;
+    font-weight: bold;
+    color: skyblue;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+    position: absolute;
+    transition: opacity 1s 1.5s, font-size 1s, top 1s, left 1s, right 1s;
+} #porfol .btn-group .btn.carousel:first-child{
+    left: 60px;
+    top: 410px;
+} #porfol .btn-group .btn.carousel:last-child{
+    right: 60px;
+    top: 410px;
+}
+
+
+
+/* h2 모션 */
+.active .effect-tit > *{
+    opacity: 1; 
+    transform: translateX(0);
+}
+/* h2 트랜지션 딜레이 */
+.active .effect-tit .ti_d01{
+    transition-delay: 0.1s;
+}.active .effect-tit .ti_d02{
+    transition-delay: 0.2s;
+}
+
+/* active */
+#home.active .tit{
+    opacity: 1;
+} #home.active .producer{
+    opacity: 1;
+}
+
+#about.active .chart{
+    opacity: 1;
+} 
+
+#porfol.active .item >li{
+    opacity: 1;
+    transform: translateY(0);
+} #porfol.active .item >li:first-child{
+    transition: left 1s, right 1s, transform 1s 0.5s, opacity 1s 0.7s;
+} #porfol.active .item >li:nth-child(2){
+    transition: left 1s, right 1s, transform 1s 0.6s, opacity 1s 0.8s;
+} #porfol.active .item >li:nth-child(3){
+    transition: left 1s, right 1s, transform 1s 0.7s, opacity 1s 0.9s;
+} #porfol.active .item >li:nth-child(4){
+    transition: left 1s, right 1s, transform 1s 0.8s, opacity 1s 1.0s;
+}
+
+#porfol.active .btn-group .btn.carousel{
+    opacity: 1;
+}
+
+
+
+
+@media screen and (max-width:1024px) {
+    #about .inner{
+        padding-top: 250px;
+    }
+    #about .chart.circle .graph{
+        width: 110px;
+        height: 110px;
+    } #about .chart.circle .graph .center {
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+    }
+
+    #porfol .inner{
+        padding: 180px 100px 0;
+    }
+    #porfol .item li .web-view {
+        width: 400px;
+        height: 250px;
+    }
+    #porfol .btn-group .btn.carousel{
+        font-size: 50px;
+    } #porfol .btn-group .btn.carousel:first-child{
+        top: 390px;
+        left: 50px;
+    } #porfol .btn-group .btn.carousel:last-child{
+        top: 390px;
+        right: 50px;
+    }
+
+    .porfol .explanation{
+        width: 500px;
+        margin-bottom: 50px;
+    } .porfol .explanation .button{
+        margin-top: 30px;
+    }
+	.porfol .cont-box{
+        display: block;
+        width: 500px;
+    }
+}
+
+
+@media screen and (max-width:768px){
+    #home .tit {
+        left: 100px;
+    } #home .tit h2{
+        font-size: 45px;
+    } #home .tit p{
+        font-size: 18px;
+    }
+    
+    #home .producer {
+        right: 100px;
+        font-size: 25px;
+    }
+
+    #about{
+        display: flex;
+        align-items: center;
+    } 
+    #about .inner{
+        padding: 0;
+    } 
+
+    #porfol .inner{
+        padding: 180px 50px 0;
+    } 
+    #porfol .btn-group .btn.carousel:first-child {
+        left: 15px;
+        top: 390px;
+    } #porfol .btn-group .btn.carousel:last-child {
+        right: 15px;
+        top: 390px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    /* 모바일 시 스킬 삭제 */
+    .effect-tit span{
+        opacity: 1;
+        transition: none;
+    } .effect-tit .tf_l{
+        transform: none;
+    } .effect-tit .tf_r{
+        transform: none;
+    }
+
+    #home .tit{
+        transition: left 1s, top 1s;
+    }
+    #home .producer{
+        transition: right 1s, bottom 1s, font-size 1s;
+    }
+
+    #about .chart{
+        opacity: 1;
+        transition: none;
+    }
+    #porfol.active .item >li{
+        opacity: 1;
+        transform: none;
+    } #porfol.active .item >li:first-child{
+        transition: left 1s, right 1s;
+    } #porfol.active .item >li:nth-child(2){
+        transition: left 1s, right 1s;
+    } #porfol.active .item >li:nth-child(3){
+        transition: left 1s, right 1s;
+    }
+
+
+
+    #home .tit {
+        left: 50px;
+        top: 200px
+    } #home .tit h2{
+        font-size: 40px;
+    } #home .tit p{
+        font-size: 16px;
+    }
+    
+    #home .producer {
+        right: 30px;
+        font-size: 22px;
+    }
+
+
+    #about .chart.rod .graph {
+        width: 230px;
+    }
+    
+    #porfol .inner{
+        padding: 200px 30px 0;
+    } #porfol .item li{
+        padding: 0 15px;
+
+    } #porfol .item li .web-view {
+        width: 300px;
+        height: 200px;
+        box-shadow: none;
+        border: 1px solid #ccc;
+    } #porfol .item li .web-view_overlay div{
+        font-size: 35px;
+    }
+
+    #porfol .btn-group .btn.carousel {
+        font-size: 40px;
+    } #porfol .btn-group .btn.carousel:first-child {
+        left: 40px;
+        top: 400px;
+    } #porfol .btn-group .btn.carousel:last-child {
+        right: 40px;
+        top: 400px;
+    }
+
+}
+
+
+@media screen and (max-height:768px){
+    #home .tit{
+        top: 200px;
+    } #home .producer{
+        bottom: 100px;
+    }
+
+    #about .inner{
+        padding-top: 100px;
+    }
+    
+    #porfol .inner{
+        padding-top: 110px;
+    } 
+    #porfol .btn-group .btn.carousel:first-child {
+        top: 340px;
+    } #porfol .btn-group .btn.carousel:last-child {
+        top: 340px;
+    }
+}

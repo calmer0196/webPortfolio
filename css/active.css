@@ -1,0 +1,37 @@
+/* h2 모션 */
+.active .effect-tit > *{
+    opacity: 1; 
+    transform: translateX(0);
+}
+/* h2 트랜지션 딜레이 */
+.active .effect-tit .ti_d01{
+    transition-delay: 0.1s;
+}.active .effect-tit .ti_d02{
+    transition-delay: 0.2s;
+}
+
+
+#home.active .tit{
+    opacity: 1;
+} #home.active .producer{
+    opacity: 1;
+}
+
+#about.active .chart{
+    opacity: 1;
+} 
+
+#porfol.active .item >li{
+    opacity: 1;
+    transform: translateY(0);
+} #porfol.active .item >li:first-child{
+    transition: left 1s, right 1s, transform 1s 0.5s, opacity 1s 0.8s;
+} #porfol.active .item >li:nth-child(2){
+    transition: left 1s, right 1s, transform 1s 0.6s, opacity 1s 0.9s;
+} #porfol.active .item >li:nth-child(3){
+    transition: left 1s, right 1s, transform 1s 0.7s, opacity 1s 1.0s;
+}
+
+#porfol.active .btn-group .btn{
+    opacity: 1;
+}

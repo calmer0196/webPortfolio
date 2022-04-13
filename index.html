@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio</title>
+	<!-- web-font -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/navbar.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/font.css">
+	<link rel="stylesheet" type="text/css" href="css/clear.css">
+</head>
+
+<body>
+	<nav class="navbar">
+		<div class="inner">
+			<!-- <p class="logo"><a href="#"></a></p> -->
+			<ul class="menu-list">
+				<li class="icon cancel-btn">
+					<i class="fas fa-times"></i>
+				</li>
+				<li><a href="#home">HOME</a></li>
+				<li><a href="#about">ABOUT</a></li>
+				<li><a href="#porfol">Portfolio</a></li>
+			</ul>
+			<div class="icon menu-btn">
+				<i class="fas fa-bars"></i>
+			</div>
+		</div>
+	</nav>
+	<section id="home" class="content active">
+		<div class="tit">
+			<h2>Welcome!</h2>
+			<p>환영합니다!</p>
+		</div>
+		<div class="producer">
+			<p><strong>Taeyeon</strong>
+				Kim</p>
+		</div>
+	</section>
+
+	<section id="about" class="content">
+		<div class="inner">
+			<h2 class="effect-tit">
+				<!-- tf_l : transform-left
+                     ti_d : transition-delay -->
+				<span class="tf_l ti_d02">S</span>
+				<span class="tf_l ti_d01">k</span>
+				<span class="tf_m">i</span>
+				<span class="tf_r ti_d01">l</span>
+				<span class="tf_r ti_d02">l</span>
+			</h2>
+			<!-- 차트 -->
+			<ul class="chart">
+				<li>
+					<div class="graph"><span class="center">80%</span></div>
+					<div class="txt">Ps</div>
+				</li>
+				<li>
+					<div class="graph"><span class="center">40%</span></div>
+					<div class="txt">Ai</div>
+				</li>
+				<li>
+					<div class="graph"><span class="center">70%</span></div>
+					<div class="txt">Html</div>
+				</li>
+				<li>
+					<div class="graph"><span class="center">60%</span></div>
+					<div class="txt">Css</div>
+				</li>
+				<li>
+					<div class="graph"><span class="center">50%</span></div>
+					<div class="txt">Js/JQ</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<!-- 포트폴리오 -->
+	<section id="porfol" class="content">
+		<div class="inner">
+			<h2 class="effect-tit">
+				<span class="tf_l ti_d02">P</span>
+				<span class="tf_l ti_d02">o</span>
+				<span class="tf_l ti_d01">r</span>
+				<span class="tf_l ti_d01">t</span>
+				<span class="tf_0">f</span>
+				<span class="tf_r ti_d01">o</span>
+				<span class="tf_r ti_d01">l</span>
+				<span class="tf_r ti_d02">i</span>
+				<span class="tf_r ti_d02">o</span>
+			</h2>
+
+			<ul class="item carousel">
+				<li>
+					<a href="site/hongcha/index.html" target="_blank" class="web-view">
+						<div class="web-view_overlay">
+							<div>Cafe Leaf</div>
+						</div>
+					</a>
+					<div class="web-view_desc">
+						<h3 class="tit">카페 사이트</h3>
+						<p class="desc">html, css를 사용하여 간단하게 카페 사이트를 제작하였습니다.</p>
+					</div>
+				</li>
+				<li>
+					<a href="site/cgv/index.html" target="_blank" class="web-view">
+						<div class="web-view_overlay">
+							<div class="logo-box"></div>
+						</div>
+					</a>
+					<div class="web-view_desc">
+						<h3 class="tit">CGV</h3>
+						<p class="desc">기존 cgv 사이트를 카피하여 제작하였습니다. js 프레임워크를 추가하여 슬라이드도 추가하였습니다.</p>
+					</div>
+				</li>
+				<li>
+					<a href="site/newbalance/index.html" target="_blank" class="web-view">
+						<div class="web-view_overlay">
+							<div class="logo-box"></div>
+						</div>
+					</a>
+					<div class="web-view_desc">
+						<h3 class="tit">뉴발란스</h3>
+						<p class="desc">기존 뉴발란스 사이트를 카피하여 제작하였습니다. 사이트 검사를 통하여 기존 사이트의 구성을 파악하고 카피하는 방식으로 진행하였습니다. js를
+							이용하여 더욱더 생동감을 더했습니다.</p>
+					</div>
+				</li>
+				<li>
+					<a href="site/kakao/index.html" target="_blank" class="web-view">
+						<div class="web-view_overlay">
+							<div>kakao</div>
+						</div>
+					</a>
+					<div class="web-view_desc">
+						<h3 class="tit">카카오</h3>
+						<p class="desc">기존 사이트에서 나뉘었던 정보 컨텐츠들을 메인 페이지에 간략히 섹션마다 정리하고, 그 섹션마다 js를 이용한 슬라이드를 이용하여 여러가지 정보를
+							간편하게 체크할 수 있게 하였습니다.</p>
+					</div>
+				</li>
+			</ul>
+			<div class="btn-group">
+				<span class="btn carousel">‹</span>
+				<span class="btn carousel">›</span>
+			</div>
+		</div>
+	</section>
+
+	<!-- 자바스크립트 -->
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="js/carousel.js"></script>
+	<script type="text/javascript" src="js/navbar.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+
+</body>
+
+</html>
