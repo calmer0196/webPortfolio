@@ -55,7 +55,8 @@
 	font-size: 40px;
 }
 .slider .item.active {
-	opacity: 1;
+	display: block;
+	-opacity: 1;
 	z-index: 1;
 }
 
@@ -163,6 +164,8 @@ section.service .cont .item-box .item.fir li:first-child .img{
 	background: url("../img/tab1-4.jpg") center/cover;
 } section.service .cont .item-box .item.fir li:nth-child(5) .img{
 	background: url("../img/tab1-5.jpg") center/cover;
+} section.service .cont .item-box .item.fir li:nth-child(6) .img{
+	background: url("../img/tab1-6.jpg") center/cover;
 }
 
 section.service .cont .item-box .item.sec li:first-child .img{

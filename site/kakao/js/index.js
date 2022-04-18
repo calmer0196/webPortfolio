@@ -1,25 +1,46 @@
 function mainSlide() {
-	const firstSlide = document.querySelector(".slider .item:first-child");
-	const currentSlide = document.querySelector(".slider .item.active");
+	// const firstSlide = document.querySelector(".slider .item:first-child");
+	// const currentSlide = document.querySelector(".slider .item.active");
 
-	if (currentSlide) {
-		currentSlide.classList.remove("active");
-		const nextSlide = currentSlide.nextElementSibling;
+	// if (currentSlide) {
+	// 	currentSlide.classList.remove("active");
+	// 	const nextSlide = currentSlide.nextElementSibling;
 
-		if (nextSlide)
-			nextSlide.classList.add("active");
-		else
-			firstSlide.classList.add("active");
-	} else 
-		firstSlide.classList.add("active");
+	// 	if (nextSlide)
+	// 		nextSlide.classList.add("active");
+	// 	else
+	// 		firstSlide.classList.add("active");
+	// } else 
+	// 	firstSlide.classList.add("active");
 	
-	setInterval(mainSlide, 5000);
+	// setInterval(mainSlide, 4000);
+
+		let index = 0;   //이미지에 접근하는 인덱스
+		window.onload = function(){
+			slideShow();
+		}
+		
+		function slideShow() {
+		// var x = document.getElementsByClassName("slide1");  //slide1에 대한 dom 참조
+		const x = document.querySelectorAll(".slider .item");  //slide1에 대한 dom 참조
+		for (let i = 0; i < x.length; i++) {
+		// x[i].style.display = "none";   //처음에 전부 display를 none으로 한다.
+		x[i].style.opacity = "0";   //처음에 전부 display를 none으로 한다.
+		}
+			index++;
+		if (index > x.length) {
+			index = 1;  //인덱스가 초과되면 1로 변경
+		}   
+		// x[index-1].style.display = "block";  //해당 인덱스는 block으로
+		x[index-1].style.opacity = "1";  //해당 인덱스는 block으로
+		setTimeout(slideShow, 5000);   //함수를 4초마다 호출
+	}
 }
 
 
 
 
-const carouselBtnGroup = document.querySelectorAll(".btn-group.carousel");
+// const carouselBtnGroup = document.querySelectorAll(".btn-group.carousel");
 const carouselBtn_0 = document.querySelectorAll("section.service .btn-group.carousel .btn");
 const carouselItemLi_0 = document.querySelectorAll("section.service .item.carousel li");
 let carouselBtnCnt_0 = 0;
